@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720BEFF72082B21A00E3BB83 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720BEFF62082B21A00E3BB83 /* LoginViewController.swift */; };
+		720BEFF92082B3C800E3BB83 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720BEFF82082B3C800E3BB83 /* CadastroViewController.swift */; };
+		7219112C2059A5BE00C56CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219112B2059A5BE00C56CFF /* AppDelegate.swift */; };
+		7219112E2059A5BE00C56CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219112D2059A5BE00C56CFF /* ViewController.swift */; };
+		721911312059A5BE00C56CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7219112F2059A5BE00C56CFF /* Main.storyboard */; };
+		721911362059A5BE00C56CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721911342059A5BE00C56CFF /* LaunchScreen.storyboard */; };
+		7219113E2059B50100C56CFF /* RachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219113D2059B50100C56CFF /* RachaViewController.swift */; };
+		72191148205D4C2F00C56CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72191147205D4C2F00C56CFF /* Assets.xcassets */; };
+		72280F7B207E82C500D9CE7E /* Rachas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72280F7A207E82C500D9CE7E /* Rachas.swift */; };
+		722D9FE6207BD2DD008B4882 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */; };
+		727E75FE205FF386005E55E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E75FD205FF386005E55E6 /* TabBarViewController.swift */; };
+		72A19BC62080D594009538A5 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A19BC52080D594009538A5 /* Jogador.swift */; };
+		72BABE7A2081931700530019 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BABE792081931700530019 /* TimesViewController.swift */; };
+		72CA40CA205D5DCF00789DB5 /* JogadorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA40C9205D5DCF00789DB5 /* JogadorTableViewController.swift */; };
+		8A224BC515F19D2CDE0176D0 /* Pods_VaiTerRacha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.debug.xcconfig"; sourceTree = "<group>"; };
+		720BEFF62082B21A00E3BB83 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		720BEFF82082B3C800E3BB83 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		721911282059A5BE00C56CFF /* VaiTerRacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaiTerRacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7219112B2059A5BE00C56CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7219112D2059A5BE00C56CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		721911302059A5BE00C56CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		721911352059A5BE00C56CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		721911372059A5BE00C56CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7219113D2059B50100C56CFF /* RachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachaViewController.swift; sourceTree = "<group>"; };
+		72191147205D4C2F00C56CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		72280F7A207E82C500D9CE7E /* Rachas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rachas.swift; sourceTree = "<group>"; };
+		722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		722D9FE7207D1236008B4882 /* VaiTerRacha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaiTerRacha.entitlements; sourceTree = "<group>"; };
+		727E75FD205FF386005E55E6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		72A19BC52080D594009538A5 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
+		72BABE792081931700530019 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
+		72CA40C9205D5DCF00789DB5 /* JogadorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogadorTableViewController.swift; sourceTree = "<group>"; };
+		823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.release.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.release.xcconfig"; sourceTree = "<group>"; };
+		F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaiTerRacha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721911252059A5BE00C56CFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A224BC515F19D2CDE0176D0 /* Pods_VaiTerRacha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7219111F2059A5BE00C56CFF = {
+			isa = PBXGroup;
+			children = (
+				7219112A2059A5BE00C56CFF /* VaiTerRacha */,
+				721911292059A5BE00C56CFF /* Products */,
+				800814B1F441B373A899E441 /* Pods */,
+				8D3129D8DE19165D4B846C0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		721911292059A5BE00C56CFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721911282059A5BE00C56CFF /* VaiTerRacha.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7219112A2059A5BE00C56CFF /* VaiTerRacha */ = {
+			isa = PBXGroup;
+			children = (
+				722D9FE7207D1236008B4882 /* VaiTerRacha.entitlements */,
+				72280F7A207E82C500D9CE7E /* Rachas.swift */,
+				72A19BC52080D594009538A5 /* Jogador.swift */,
+				7219112B2059A5BE00C56CFF /* AppDelegate.swift */,
+				72BABE792081931700530019 /* TimesViewController.swift */,
+				72CA40C9205D5DCF00789DB5 /* JogadorTableViewController.swift */,
+				727E75FD205FF386005E55E6 /* TabBarViewController.swift */,
+				7219113D2059B50100C56CFF /* RachaViewController.swift */,
+				7219112D2059A5BE00C56CFF /* ViewController.swift */,
+				720BEFF82082B3C800E3BB83 /* CadastroViewController.swift */,
+				720BEFF62082B21A00E3BB83 /* LoginViewController.swift */,
+				7219112F2059A5BE00C56CFF /* Main.storyboard */,
+				721911342059A5BE00C56CFF /* LaunchScreen.storyboard */,
+				721911372059A5BE00C56CFF /* Info.plist */,
+				722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */,
+				72191147205D4C2F00C56CFF /* Assets.xcassets */,
+			);
+			path = VaiTerRacha;
+			sourceTree = "<group>";
+		};
+		800814B1F441B373A899E441 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */,
+				823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D3129D8DE19165D4B846C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		721911272059A5BE00C56CFF /* VaiTerRacha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7219113A2059A5BE00C56CFF /* Build configuration list for PBXNativeTarget "VaiTerRacha" */;
+			buildPhases = (
+				E24E119517B3FFBC1861D085 /* [CP] Check Pods Manifest.lock */,
+				721911242059A5BE00C56CFF /* Sources */,
+				721911252059A5BE00C56CFF /* Frameworks */,
+				721911262059A5BE00C56CFF /* Resources */,
+				8B45ECFBA0740FFDA91E9359 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VaiTerRacha;
+			productName = VaiTerRacha;
+			productReference = 721911282059A5BE00C56CFF /* VaiTerRacha.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721911202059A5BE00C56CFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Arleson Silva";
+				TargetAttributes = {
+					721911272059A5BE00C56CFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 721911232059A5BE00C56CFF /* Build configuration list for PBXProject "VaiTerRacha" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7219111F2059A5BE00C56CFF;
+			productRefGroup = 721911292059A5BE00C56CFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				721911272059A5BE00C56CFF /* VaiTerRacha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		721911262059A5BE00C56CFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721911362059A5BE00C56CFF /* LaunchScreen.storyboard in Resources */,
+				722D9FE6207BD2DD008B4882 /* GoogleService-Info.plist in Resources */,
+				72191148205D4C2F00C56CFF /* Assets.xcassets in Resources */,
+				721911312059A5BE00C56CFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B45ECFBA0740FFDA91E9359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24E119517B3FFBC1861D085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VaiTerRacha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721911242059A5BE00C56CFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720BEFF72082B21A00E3BB83 /* LoginViewController.swift in Sources */,
+				7219112E2059A5BE00C56CFF /* ViewController.swift in Sources */,
+				72A19BC62080D594009538A5 /* Jogador.swift in Sources */,
+				720BEFF92082B3C800E3BB83 /* CadastroViewController.swift in Sources */,
+				72280F7B207E82C500D9CE7E /* Rachas.swift in Sources */,
+				7219112C2059A5BE00C56CFF /* AppDelegate.swift in Sources */,
+				727E75FE205FF386005E55E6 /* TabBarViewController.swift in Sources */,
+				72BABE7A2081931700530019 /* TimesViewController.swift in Sources */,
+				72CA40CA205D5DCF00789DB5 /* JogadorTableViewController.swift in Sources */,
+				7219113E2059B50100C56CFF /* RachaViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7219112F2059A5BE00C56CFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721911302059A5BE00C56CFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		721911342059A5BE00C56CFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721911352059A5BE00C56CFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		721911382059A5BE00C56CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		721911392059A5BE00C56CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7219113B2059A5BE00C56CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VaiTerRacha/VaiTerRacha.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Z82LFNB7S;
+				INFOPLIST_FILE = VaiTerRacha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arlesonsilva.VaiTerRacha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7219113C2059A5BE00C56CFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VaiTerRacha/VaiTerRacha.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Z82LFNB7S;
+				INFOPLIST_FILE = VaiTerRacha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arlesonsilva.VaiTerRacha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721911232059A5BE00C56CFF /* Build configuration list for PBXProject "VaiTerRacha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721911382059A5BE00C56CFF /* Debug */,
+				721911392059A5BE00C56CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7219113A2059A5BE00C56CFF /* Build configuration list for PBXNativeTarget "VaiTerRacha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7219113B2059A5BE00C56CFF /* Debug */,
+				7219113C2059A5BE00C56CFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 721911202059A5BE00C56CFF /* Project object */;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>821733703822-vid8303i1rj945aua2ck3demd0qkg61r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.821733703822-vid8303i1rj945aua2ck3demd0qkg61r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyANLyDvmah6e5Ef49kQC3Xfqgouna1XxAk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>821733703822</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.arlesonsilva.VaiTerRacha</string>
+	<key>PROJECT_ID</key>
+	<string>vai-ter-racha</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vai-ter-racha.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:821733703822:ios:012cd657c5f35e3b</string>
+	<key>DATABASE_URL</key>
+	<string>https://vai-ter-racha.firebaseio.com</string>
+</dict>
+</plist>
