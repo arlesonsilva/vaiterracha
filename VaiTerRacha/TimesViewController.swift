@@ -19,7 +19,7 @@ class TimesViewController: UIViewController {
     var indiceSelecionado:String!
     var times:[String] = []
     var jogadoresC:[Jogador] = []
-    var timesJogadores:Dictionary<String,[String]> = [:]
+    var timesJogadores:[String] = []
     var firebase: DatabaseReference!
     var auth: Auth!
     
@@ -80,18 +80,18 @@ class TimesViewController: UIViewController {
         //let timesJogadores = [ "\(times[0]) \n \(jogadores[0]) \n \(jogadores[1]) \n \(jogadores[2]) \n \(jogadores[3]) \n \(jogadores[4])" ]
         
         let numeroTotalJogadores = jogadoresC.count
+        if numeroTotalJogadores == 0 {
+            lbTimesSoteado.text = "Nenhum jogador confirmado"
+        }
         if let numberJogadoresPorTime = Int(lbNumeroTimes.text!) {
             if numberJogadoresPorTime > 0 {
                 let difJogadoresPorTime = numeroTotalJogadores % numberJogadoresPorTime
                 let numeroTimes:Int
-                //print("difJogadoresPorTime \(difJogadoresPorTime)")
                 if difJogadoresPorTime > 0 {
                     let jogadoresPorTimeMenosDif = numeroTotalJogadores - difJogadoresPorTime
                     numeroTimes = jogadoresPorTimeMenosDif / numberJogadoresPorTime
-                    //print("numeroTimes \(numeroTimes)")
                 }else {
                     numeroTimes = numeroTotalJogadores / numberJogadoresPorTime
-                    //print("numeroTimes \(numeroTimes)")
                 }
                 times.removeAll()
                 // crio os times
@@ -101,27 +101,24 @@ class TimesViewController: UIViewController {
                 // caso tenha time incompleto crio um time a mais
                 if difJogadoresPorTime > 0 {
                     let novoTime = times.count + 1
-                    //print("novoTime \(novoTime)")
                     times += ["Time \(novoTime)"]
-                    //print(times)
                 }
-                //timesJogadores.removeAll()
+                timesJogadores.removeAll()
                 // faco sorteio dos jogadores para os times
-                let njpt = numberJogadoresPorTime
+                //let njpt = numberJogadoresPorTime
                 for i in 0...times.count - 1 {
-                    let stringTimes = String(times[i])
-                    print(stringTimes)
-                    for j in 0...jogadoresC.index(after: njpt - 1) {
-                        print(jogadoresC[j].nome)
-                    }
-                    //let arrayJogadores = jogadoresC.prefix(njpt)
-                    //print(arrayJogadores)
-//                    let newArrayJogadores = Array(arrayJogadores)
-//                    timesJogadores = [stringTimes : newArrayJogadores]
-//                    njpt = njpt + numberJogadoresPorTime
-//                    print(timesJogadores)
+                    timesJogadores.append(times[i])
+                    //for j in 0...jogadoresC.count - 1 {
+                        //timesJogadores[i].append(" \(jogadoresC[j].nome) ")
+                        //jogadoresC.remove(at: j)
+                    //}
+                    //njpt = njpt + numberJogadoresPorTime
                 }
-                //print(jogadoresC)
+                var res = ""
+                for time in timesJogadores {
+                    res += "\(time) \n \n"
+                }
+                lbTimesSoteado.text = res
             }
         }
     }

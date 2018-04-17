@@ -146,7 +146,12 @@ class JogadorTableViewController: UITableViewController {
             }
         }
         alert.addTextField { (textField) in
-            let jogador = self.jogadores[indice]
+            let jogador:Jogador
+            if section == 0 {
+                jogador = self.jogadoresC[indice]
+            }else {
+                jogador = self.jogadores[indice]
+            }
             let nome_jogador = jogador.nome
             textField.placeholder = "Digite o nome do jogador aqui..."
             textField.text = nome_jogador
