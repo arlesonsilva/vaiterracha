@@ -205,7 +205,7 @@ class JogadorTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celulaJogador", for: indexPath)
         
         cell.textLabel?.text = jogador.nome
-        cell.imageView?.image = #imageLiteral(resourceName: "ball")
+        //cell.imageView?.image = #imageLiteral(resourceName: "ball")
         
         let lightSwitch = UISwitch(frame: .zero) as UISwitch
         

@@ -77,8 +77,6 @@ class TimesViewController: UIViewController {
     
     @IBAction func btnSorteioTimes(_ sender: Any) {
         
-        //let timesJogadores = [ "\(times[0]) \n \(jogadores[0]) \n \(jogadores[1]) \n \(jogadores[2]) \n \(jogadores[3]) \n \(jogadores[4])" ]
-        
         let numeroTotalJogadores = jogadoresC.count
         if numeroTotalJogadores == 0 {
             lbTimesSoteado.text = "Nenhum jogador confirmado"
@@ -105,14 +103,8 @@ class TimesViewController: UIViewController {
                 }
                 timesJogadores.removeAll()
                 // faco sorteio dos jogadores para os times
-                //let njpt = numberJogadoresPorTime
                 for i in 0...times.count - 1 {
                     timesJogadores.append(times[i])
-                    //for j in 0...jogadoresC.count - 1 {
-                        //timesJogadores[i].append(" \(jogadoresC[j].nome) ")
-                        //jogadoresC.remove(at: j)
-                    //}
-                    //njpt = njpt + numberJogadoresPorTime
                 }
                 var res = ""
                 for time in timesJogadores {
