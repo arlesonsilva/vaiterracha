@@ -69,33 +69,30 @@ class ViewController: UITableViewController {
         let rachasDB = self.database.child("rachas").child(emailB64)
         rachasDB.observe(.value) { (snapshot) in
             
-            //if the reference have some values
-            if snapshot.childrenCount > 0 {
-                //clearing the list
-                self.rachas.removeAll()
+            //clearing the list
+            self.rachas.removeAll()
+            
+            //iterating through all the values
+            for rachas in snapshot.children.allObjects as! [DataSnapshot] {
+                //getting values
+                let dados = rachas.value as? NSDictionary
                 
-                //iterating through all the values
-                for rachas in snapshot.children.allObjects as! [DataSnapshot] {
-                    //getting values
-                    let dados = rachas.value as? NSDictionary
-                    
-                    if let id = dados!["id_racha"] {
-                        if let nome = dados!["nome_racha"] {
-                            if let local = dados!["local_racha"] {
-                                if let hora = dados!["hora_racha"] {
-                                    if let diaS = dados!["dia_semana_racha"] {
-                                        let racha = Racha(id: id as! String, nome: nome as! String, hora: hora as! String, local: local as! String, diaSemana: diaS as! String)
-                                        //appending it to list
-                                        self.rachas.append(racha)
-                                    }
+                if let id = dados!["id_racha"] {
+                    if let nome = dados!["nome_racha"] {
+                        if let local = dados!["local_racha"] {
+                            if let hora = dados!["hora_racha"] {
+                                if let diaS = dados!["dia_semana_racha"] {
+                                    let racha = Racha(id: id as! String, nome: nome as! String, hora: hora as! String, local: local as! String, diaSemana: diaS as! String)
+                                    //appending it to list
+                                    self.rachas.append(racha)
                                 }
                             }
                         }
                     }
                 }
-                //reloading the tableview
-                self.tableView.reloadData()
             }
+            //reloading the tableview
+            self.tableView.reloadData()
         }
     }
     

@@ -21,11 +21,11 @@
 		72A19BC62080D594009538A5 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A19BC52080D594009538A5 /* Jogador.swift */; };
 		72BABE7A2081931700530019 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BABE792081931700530019 /* TimesViewController.swift */; };
 		72CA40CA205D5DCF00789DB5 /* JogadorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA40C9205D5DCF00789DB5 /* JogadorTableViewController.swift */; };
-		8A224BC515F19D2CDE0176D0 /* Pods_VaiTerRacha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */; };
+		D2A5619E1C6EAA915B376483 /* Pods_VaiTerRacha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB585EA89D3115C00DA6B392 /* Pods_VaiTerRacha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.debug.xcconfig"; sourceTree = "<group>"; };
+		6D3F0718C05BB79E698E3D06 /* Pods-VaiTerRacha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.release.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.release.xcconfig"; sourceTree = "<group>"; };
 		720BEFF62082B21A00E3BB83 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		720BEFF82082B3C800E3BB83 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		721911282059A5BE00C56CFF /* VaiTerRacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaiTerRacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +43,8 @@
 		72A19BC52080D594009538A5 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
 		72BABE792081931700530019 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
 		72CA40C9205D5DCF00789DB5 /* JogadorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogadorTableViewController.swift; sourceTree = "<group>"; };
-		823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.release.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.release.xcconfig"; sourceTree = "<group>"; };
-		F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaiTerRacha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB585EA89D3115C00DA6B392 /* Pods_VaiTerRacha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaiTerRacha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FB184B34A0FECD1EA192CB /* Pods-VaiTerRacha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaiTerRacha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,20 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A224BC515F19D2CDE0176D0 /* Pods_VaiTerRacha.framework in Frameworks */,
+				D2A5619E1C6EAA915B376483 /* Pods_VaiTerRacha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64F7D0E5CF25265223EB85D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB585EA89D3115C00DA6B392 /* Pods_VaiTerRacha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7219111F2059A5BE00C56CFF = {
 			isa = PBXGroup;
 			children = (
 				7219112A2059A5BE00C56CFF /* VaiTerRacha */,
 				721911292059A5BE00C56CFF /* Products */,
-				800814B1F441B373A899E441 /* Pods */,
-				8D3129D8DE19165D4B846C0E /* Frameworks */,
+				DA156EDCCE2FBDD36FE37132 /* Pods */,
+				64F7D0E5CF25265223EB85D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,21 +108,13 @@
 			path = VaiTerRacha;
 			sourceTree = "<group>";
 		};
-		800814B1F441B373A899E441 /* Pods */ = {
+		DA156EDCCE2FBDD36FE37132 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */,
-				823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */,
+				D1FB184B34A0FECD1EA192CB /* Pods-VaiTerRacha.debug.xcconfig */,
+				6D3F0718C05BB79E698E3D06 /* Pods-VaiTerRacha.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		8D3129D8DE19165D4B846C0E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F10F338485CA5DD4C9AD832D /* Pods_VaiTerRacha.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,11 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7219113A2059A5BE00C56CFF /* Build configuration list for PBXNativeTarget "VaiTerRacha" */;
 			buildPhases = (
-				E24E119517B3FFBC1861D085 /* [CP] Check Pods Manifest.lock */,
+				87B77A7E5439F15910E816B9 /* [CP] Check Pods Manifest.lock */,
 				721911242059A5BE00C56CFF /* Sources */,
 				721911252059A5BE00C56CFF /* Frameworks */,
 				721911262059A5BE00C56CFF /* Resources */,
-				8B45ECFBA0740FFDA91E9359 /* [CP] Embed Pods Frameworks */,
+				2D502EA6C8F1B4BE0B6B9CB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +193,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8B45ECFBA0740FFDA91E9359 /* [CP] Embed Pods Frameworks */ = {
+		2D502EA6C8F1B4BE0B6B9CB8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,7 +217,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VaiTerRacha/Pods-VaiTerRacha-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E24E119517B3FFBC1861D085 /* [CP] Check Pods Manifest.lock */ = {
+		87B77A7E5439F15910E816B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -390,7 +390,7 @@
 		};
 		7219113B2059A5BE00C56CFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BCB0544AD6A14E4DC65B16 /* Pods-VaiTerRacha.debug.xcconfig */;
+			baseConfigurationReference = D1FB184B34A0FECD1EA192CB /* Pods-VaiTerRacha.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VaiTerRacha/VaiTerRacha.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,7 +406,7 @@
 		};
 		7219113C2059A5BE00C56CFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 823B6FBA8D5A3749679FB6D3 /* Pods-VaiTerRacha.release.xcconfig */;
+			baseConfigurationReference = 6D3F0718C05BB79E698E3D06 /* Pods-VaiTerRacha.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VaiTerRacha/VaiTerRacha.entitlements;
 				CODE_SIGN_STYLE = Automatic;

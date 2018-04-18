@@ -103,12 +103,27 @@ class TimesViewController: UIViewController {
                 }
                 timesJogadores.removeAll()
                 // faco sorteio dos jogadores para os times
+                var array = jogadoresC
+                var njpt1 = 0
+                var njpt2 = numberJogadoresPorTime
                 for i in 0...times.count - 1 {
-                    timesJogadores.append(times[i])
+                    timesJogadores.append("\(times[i]) \n")
+                    print(times[i])
+                    let arrayTeam = array[njpt1..<njpt2]
+                    for j in arrayTeam {
+                        print(j.nome)
+                        timesJogadores.append("  \(j.nome) \n");
+                    }
+                    njpt1 = njpt1 + numberJogadoresPorTime
+                    njpt2 = njpt2 + numberJogadoresPorTime
+                    if njpt2 > array.count {
+                        njpt2 = njpt1 + difJogadoresPorTime
+                    }
+                    timesJogadores.append("\n");
                 }
                 var res = ""
                 for time in timesJogadores {
-                    res += "\(time) \n \n"
+                    res += "\(time)" //\n \n"
                 }
                 lbTimesSoteado.text = res
             }

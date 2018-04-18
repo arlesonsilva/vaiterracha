@@ -47,8 +47,6 @@ class JogadorTableViewController: UITableViewController {
     func atualizaJogadores() {
         let emailB64 = recuperaEmailB64User()
         let ref = self.firebase.child("jogadores").child(emailB64).child(indiceSelecionado)
-            //.queryEqual(toValue: nil, childKey: indiceSelecionado)
-            //.queryEqual(toValue: nil, childKey: "\(getuid())")
         ref.observe(.value) { (snapshot) in
             //clearing the list
             self.jogadoresC.removeAll()
@@ -112,7 +110,7 @@ class JogadorTableViewController: UITableViewController {
             self.editaJogador(indice: indexPath.row, section: indexPath.section)
         }
         let delete = UITableViewRowAction(style: .default, title: "Deletar" ) { (action, indexPath) in
-            self.deleteJogador(indice: indexPath.row)
+            self.deleteJogador(indice: indexPath.row, section: indexPath.section)
             self.atualizaJogadores()
         }
         edit.backgroundColor = .blue
@@ -160,8 +158,13 @@ class JogadorTableViewController: UITableViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func deleteJogador(indice:Int) {
-        let jogador = self.jogadores[indice]
+    func deleteJogador(indice:Int, section:Int) {
+        let jogador:Jogador
+        if section == 0 {
+            jogador = self.jogadoresC[indice]
+        }else {
+            jogador = self.jogadores[indice]
+        }
         let indice = jogador.id
         let emailB64 = self.recuperaEmailB64User()
         let ref = firebase.child("jogadores").child(emailB64).child(indiceSelecionado).child(indice)
