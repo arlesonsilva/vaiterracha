@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import Darwin
 
 class TimesViewController: UIViewController {
     
@@ -76,7 +77,7 @@ class TimesViewController: UIViewController {
     }
     
     @IBAction func btnSorteioTimes(_ sender: Any) {
-        
+        self.shuffle()
         let numeroTotalJogadores = jogadoresC.count
         if numeroTotalJogadores == 0 {
             lbTimesSoteado.text = "Nenhum jogador confirmado"
@@ -108,10 +109,8 @@ class TimesViewController: UIViewController {
                 var njpt2 = numberJogadoresPorTime
                 for i in 0...times.count - 1 {
                     timesJogadores.append("\(times[i]) \n")
-                    print(times[i])
                     let arrayTeam = array[njpt1..<njpt2]
                     for j in arrayTeam {
-                        print(j.nome)
                         timesJogadores.append("  \(j.nome) \n");
                     }
                     njpt1 = njpt1 + numberJogadoresPorTime
@@ -125,8 +124,25 @@ class TimesViewController: UIViewController {
                 for time in timesJogadores {
                     res += "\(time)" //\n \n"
                 }
+                // salva times no firebase
+                if let indice = self.indiceSelecionado {
+                    let emailB64 = self.recuperaEmailB64User()
+                    let key = indice
+                    let ref = self.firebase.child("times").child(emailB64).child(key)
+                    ref.setValue(timesJogadores)
+                }
                 lbTimesSoteado.text = res
+                
             }
+        }
+    }
+    
+    func shuffle() {
+        for _ in 0..<jogadoresC.count
+        {
+            let rand = Int(arc4random_uniform(UInt32(jogadoresC.count)))
+            jogadoresC.append(jogadoresC[rand])
+            jogadoresC.remove(at: rand)
         }
     }
     
