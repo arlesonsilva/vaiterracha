@@ -32,6 +32,7 @@ class TimesViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         self.atualizaJogadores()
+        self.checkIfExistsTimes()
     }
     
     func atualizaJogadores() {
@@ -57,6 +58,34 @@ class TimesViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func retornaTimesSorteados() {
+        let emailB64 = recuperaEmailB64User()
+        let ref = self.firebase.child("times").child(emailB64).child(indiceSelecionado)
+        ref.observe(.value) { (snapshot) in
+            //iterating through all the values
+            for times in snapshot.children.allObjects as! [DataSnapshot] {
+                //getting values
+                let dados = times.value as? String
+                self.lbTimesSoteado.text = self.lbTimesSoteado.text + dados!
+            }
+        }
+    }
+    
+    func checkIfExistsTimes() {
+        let indice = self.indiceSelecionado
+        let emailB64 = self.recuperaEmailB64User()
+        self.firebase.child("times").child(emailB64).child(indice!).observe(DataEventType .value, with: { (snapshot) in
+            if snapshot.childrenCount > 0 { //}.hasChild("room1"){
+                self.lbNumeroTimes.isEnabled = false
+                self.btnSorteiaTimes.isEnabled = false
+                self.retornaTimesSorteados()
+            }else{
+                self.lbNumeroTimes.isEnabled = true
+                self.btnSorteiaTimes.isEnabled = true
+            }
+        })
     }
     
     func recuperaEmailB64User() -> String {
@@ -132,7 +161,8 @@ class TimesViewController: UIViewController {
                     ref.setValue(timesJogadores)
                 }
                 lbTimesSoteado.text = res
-                
+                lbNumeroTimes.isEnabled = false
+                btnSorteiaTimes.isEnabled = false
             }
         }
     }
