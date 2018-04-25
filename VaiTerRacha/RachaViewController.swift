@@ -139,7 +139,7 @@ class RachaViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
                                 let ref = firebase.child("rachas").child(emailB64).child(indice)
                                 let racha = ["id_racha":"\(indice)",
                                              "nome_racha":"\(nm_racha)",
-                                             "dia_semana":"\(nm_semana)",
+                                             "dia_semana_racha":"\(nm_semana)",
                                              "hora_racha":"\(hr_racha)",
                                              "local_racha":"\(ds_local)"]
                                 ref.updateChildValues(racha)
