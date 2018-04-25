@@ -176,6 +176,24 @@ class TimesViewController: UIViewController {
         }
     }
     
+    // share text
+    @IBAction func btnCompartilharTimes(_ sender: Any) {
+        
+        // text to share
+        let timesSorteado = String( lbTimesSoteado.text )
+        
+        // set up activity view controller
+        let textToShare = [ timesSorteado ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        
+        // exclude some activity types from the list (optional)
+        activityViewController.excludedActivityTypes = [ UIActivityType.airDrop, UIActivityType.postToFacebook ]
+        
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

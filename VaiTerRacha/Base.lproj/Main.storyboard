@@ -198,7 +198,13 @@
                                     <color key="textColor" red="0.75479185579999997" green="0.72901600600000005" blue="0.6450805664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Times" id="4MB-UE-qbv"/>
+                                    <navigationItem title="Times" id="4MB-UE-qbv">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="StL-T1-OdI">
+                                            <connections>
+                                                <action selector="btnCompartilharTimes:" destination="43l-bo-GaC" id="mAQ-QC-YHn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="0" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="nZl-wZ-ZGd">
