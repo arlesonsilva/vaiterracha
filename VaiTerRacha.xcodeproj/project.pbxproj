@@ -14,9 +14,9 @@
 		721911312059A5BE00C56CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7219112F2059A5BE00C56CFF /* Main.storyboard */; };
 		721911362059A5BE00C56CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721911342059A5BE00C56CFF /* LaunchScreen.storyboard */; };
 		7219113E2059B50100C56CFF /* RachaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7219113D2059B50100C56CFF /* RachaViewController.swift */; };
-		72191148205D4C2F00C56CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72191147205D4C2F00C56CFF /* Assets.xcassets */; };
 		72280F7B207E82C500D9CE7E /* Rachas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72280F7A207E82C500D9CE7E /* Rachas.swift */; };
 		722D9FE6207BD2DD008B4882 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */; };
+		722DA65620D282240077D775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722DA65520D282240077D775 /* Assets.xcassets */; };
 		727E75FE205FF386005E55E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E75FD205FF386005E55E6 /* TabBarViewController.swift */; };
 		72A19BC62080D594009538A5 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A19BC52080D594009538A5 /* Jogador.swift */; };
 		72BABE7A2081931700530019 /* TimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BABE792081931700530019 /* TimesViewController.swift */; };
@@ -35,10 +35,10 @@
 		721911352059A5BE00C56CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		721911372059A5BE00C56CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7219113D2059B50100C56CFF /* RachaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RachaViewController.swift; sourceTree = "<group>"; };
-		72191147205D4C2F00C56CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		72280F7A207E82C500D9CE7E /* Rachas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rachas.swift; sourceTree = "<group>"; };
 		722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		722D9FE7207D1236008B4882 /* VaiTerRacha.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaiTerRacha.entitlements; sourceTree = "<group>"; };
+		722DA65520D282240077D775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727E75FD205FF386005E55E6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		72A19BC52080D594009538A5 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
 		72BABE792081931700530019 /* TimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				721911342059A5BE00C56CFF /* LaunchScreen.storyboard */,
 				721911372059A5BE00C56CFF /* Info.plist */,
 				722D9FE5207BD2DD008B4882 /* GoogleService-Info.plist */,
-				72191147205D4C2F00C56CFF /* Assets.xcassets */,
+				722DA65520D282240077D775 /* Assets.xcassets */,
 			);
 			path = VaiTerRacha;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 			files = (
 				721911362059A5BE00C56CFF /* LaunchScreen.storyboard in Resources */,
 				722D9FE6207BD2DD008B4882 /* GoogleService-Info.plist in Resources */,
-				72191148205D4C2F00C56CFF /* Assets.xcassets in Resources */,
 				721911312059A5BE00C56CFF /* Main.storyboard in Resources */,
+				722DA65620D282240077D775 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
